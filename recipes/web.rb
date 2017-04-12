@@ -13,5 +13,5 @@ nginx_site 'sampleapp' do
 end
 
 file "#{node['nginx']['default_root']}/index.html" do
-  content "<h1>Hello World</h1>"
+  content '<h1>Hello World</h1>'
 end
