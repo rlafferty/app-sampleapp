@@ -14,3 +14,4 @@ default['pm-poise-python']['python']['virtualenv-location'] = '/opt/app'
 default['nginx']['default_root'] = '/opt/site'
 default['app-sampleapp']['nginx']['conf_template'] = 'web/web.conf.erb'
 default['app-sampleapp']['nginx']['conf_cookbook'] = 'app-sampleapp'
+default['nginx']['default_site_enabled'] = false

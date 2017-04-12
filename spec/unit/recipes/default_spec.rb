@@ -19,7 +19,12 @@ describe 'app-sampleapp::default' do
         let(:chef_run) do
           ChefSpec::ServerRunner.new(
             platform: platform,
-            version: version).converge(described_recipe)
+            version: version
+          ).converge(described_recipe)
+        end
+
+        before do
+          stub_command(%r{ls \/.*\/recovery.conf}).and_return(false)
         end
 
         it 'converges successfully' do

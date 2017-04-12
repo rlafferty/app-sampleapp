@@ -23,7 +23,14 @@ suites:
     verifier:
       inspec_tests:
         - test/smoke/default
+        - test/smoke/git
+        - test/smoke/postgres
+        - test/smoke/python
+        - test/smoke/web
     attributes:
+      postgresql:
+        password:
+          postgres: supersecret
   - name: git
     run_list:
       - recipe[app-sampleapp::git]
