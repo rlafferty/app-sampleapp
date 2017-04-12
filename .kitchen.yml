@@ -41,3 +41,10 @@ suites:
       postgresql:
         password:
           postgres: supersecret
+  - name: python
+    run_list:
+      - recipe[app-sampleapp::python]
+    verifier:
+      inspec_tests:
+        - test/smoke/python
+    attributes:
