@@ -6,7 +6,7 @@
 
 include_recipe 'pm-postgresql::server'
 
-pg_database 'test_db' do
-  owner 'postgres'
+pg_database node['app-sampleapp']['postgres']['database-name'] do
+  owner node['app-sampleapp']['postgres']['owner-name']
   action :create
 end
