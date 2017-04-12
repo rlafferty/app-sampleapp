@@ -32,16 +32,16 @@ describe 'app-sampleapp::python' do
         end
 
         it 'installs python' do
-         expect(chef_run).to install_python_runtime('app-sampleapp').with(version: '3')
-       end
+          expect(chef_run).to install_python_runtime('app-sampleapp').with(version: '3')
+        end
 
-       it 'creates python virtual env' do
-         expect(chef_run).to create_python_virtualenv('/opt/app')
-       end
+        it 'creates python virtual env' do
+          expect(chef_run).to create_python_virtualenv('/opt/app')
+        end
 
-       it 'installed virtualenv package' do
-         expect(chef_run).to install_python_package('virtualenv')
-       end
+        it 'installed virtualenv package' do
+          expect(chef_run).to install_python_package('virtualenv')
+        end
       end
     end
   end

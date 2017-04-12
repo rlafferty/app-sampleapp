@@ -13,7 +13,7 @@
 
 [local_phases]
 unit = "chef exec rspec spec/"
-lint = "chef exec cookstyle"
+lint = "chef exec cookstyle --display-cop-names --extra-details"
 # Foodcritic includes rules only appropriate for community cookbooks
 # uploaded to Supermarket. We turn off any rules tagged "supermarket"
 # by default. If you plan to share this cookbook you should remove
