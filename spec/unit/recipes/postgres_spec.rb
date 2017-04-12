@@ -4,6 +4,8 @@
 #
 # Copyright:: 2017, PhishMe, All Rights Reserved.
 
+require 'spec_helper'
+
 test_platforms = {
   'ubuntu' => {
     'versions' => ['14.04', '16.04']
