@@ -48,3 +48,10 @@ suites:
       inspec_tests:
         - test/smoke/python
     attributes:
+  - name: web
+    run_list:
+      - recipe[app-sampleapp::web]
+    verifier:
+      inspec_tests:
+        - test/smoke/web
+    attributes:

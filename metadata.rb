@@ -26,3 +26,4 @@ chef_version '>= 12.5' if respond_to?(:chef_version)
 
 depends 'pm-postgresql'
 depends 'pm-poise-python'
+depends 'pm-nginx'
