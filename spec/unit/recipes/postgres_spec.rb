@@ -8,8 +8,8 @@ require 'spec_helper'
 
 test_platforms = {
   'ubuntu' => {
-    'versions' => ['14.04', '16.04']
-  }
+    'versions' => ['14.04', '16.04'],
+  },
 }
 
 describe 'app-sampleapp::postgres' do
