@@ -28,7 +28,7 @@ describe 'app-sampleapp::git' do
         end
 
         it 'updates apt repo' do
-          expect(chef_run).to update_apt_update('update_repo')
+          expect(chef_run).to update_apt_update('update')
         end
 
         it 'installs git package' do
