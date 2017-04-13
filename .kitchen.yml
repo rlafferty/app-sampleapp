@@ -27,6 +27,7 @@ suites:
         - test/smoke/postgres
         - test/smoke/python
         - test/smoke/web
+        - test/smoke/netdata
     attributes:
       postgresql:
         password:
@@ -61,4 +62,11 @@ suites:
     verifier:
       inspec_tests:
         - test/smoke/web
+    attributes:
+  - name: netdata
+    run_list:
+      - recipe[app-sampleapp::netdata]
+    verifier:
+      inspec_tests:
+        - test/smoke/netdata
     attributes:
